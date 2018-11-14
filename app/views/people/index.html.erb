@@ -1,6 +1,6 @@
 <h1>People</h1>
 <p><%= link_to 'New Person', new_person_path %></p>
-<% @person.each do |person| %>
+<% @people.each do |person| %>
     <h2><%= person.name %></h2>
     <%= link_to 'Show Person', person_path(person) %>
     <%= link_to 'Edit Person', edit_person_path(person) %>
