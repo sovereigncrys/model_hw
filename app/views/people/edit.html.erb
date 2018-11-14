@@ -1,0 +1,28 @@
+<h1>New Person</h1>
+<%= form_for @people do |p| %>
+    <%= p.label :name %>
+    <%= p.text_field :name %>
+    <br />
+    <br />
+    <%= p.label :age %>
+    <%= p.text_field :age %>
+    <br />
+    <br />
+    <%= p.label :hair_color %>
+    <%= p.text_field :hair_color %>
+    <br />
+    <br />
+    <%= p.label :eye_color %>
+    <%= p.text_field :eye_color %>
+    <br />
+    <br />
+    <%= p.label :gender %>
+    <%= p.check_box :gender %>
+    <br />
+    <br />
+    <%= p.label :alive %>
+    <%= p.chek_box :alive %>
+    <br />
+    <br />
+    <%= p.submit %>
+<% end %>
